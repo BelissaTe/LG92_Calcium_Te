@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2ND HTML</title>
+</head>
+
+<body>
+  <section id="part1">
+    <h2>Welcome to the Second Website!</h2>
+    <img id="imgid" width="200" height="200" src="images/pic1.jpg">
+
+    <br></br>
+
+    <div id="firstbutton" onclick="changeToFirstImg()">
+        <button>Change Image</button>
+    </div>
+
+    <br></br>
+
+    <div id="secondbutton" onclick="changeToSecondImg()">
+        <button>Original Image</button>
+    </div>
+  </section>
+
+  <section id="changeimageCode">
+    <script type="text/javascript">
+        function changeToFirstImg() {
+            const imageElement = document.getElementById("imgid");
+            imageElement.src = "images/pic2.jpg";
+        }
+
+        function changeToSecondImg() {
+            const imageElement = document.getElementById("imgid");
+            imageElement.src = "images/pic1.jpg";
+        }
+    </script>
+  </section>
+</body>
+
+</html>
